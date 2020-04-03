@@ -225,6 +225,7 @@ a {
     width: 1220px;
 }
 .box-bd ul li {
+    position: relative;
     float: left;
     height: 271px;
     width: 228px;
@@ -232,8 +233,13 @@ a {
     margin-bottom: 16px;
     background-color: #fff;
 }
-.box-bd ul li img {
+.box-bd ul li>img {
     width: 100%;
+}
+.box-bd ul li em {
+    position: absolute;
+    top: 3px;
+    right: -4px;
 }
 .box-bd ul li h3 {
     margin: 25px 20px 20px 25px;
