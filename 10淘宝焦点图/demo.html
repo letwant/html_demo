@@ -10,9 +10,18 @@
         margin: 0;
         padding: 0;
     }
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    li {
+        list-style: none;
+    }
     .tb-promo {
+        position: relative;
         width: 520px;
         height: 280px;
+        /* 绝对定位和固定定位不可以使用margin，但是相对定位可以 */
         margin: 100px auto;
         background: url(taobao.gif);
     }
@@ -20,10 +29,61 @@
         width: 520px;
         height: 280px;
     }
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        width: 20px;
+        height: 30px;
+        margin-top: -15px;
+        background: rgba(0, 0, 0, .3);
+        text-align: center;
+        line-height: 30px;
+    }
+    .prev {
+        left: 0;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .next {
+        right: 0;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    .promo-nav {
+        position:absolute;
+        bottom: 15px;
+        left: 50%;
+        margin-left: -35px;
+        width: 70px;
+        height: 13px;
+        background-color: pink;
+        background: rgba(255, 255, 255, .3);
+        border-radius: 6px;
+    }
+    .promo-nav li {
+        float: left;
+        width: 8px;
+        height: 8px;
+        margin: 3px;
+        background-color: #ffffff;
+        border-radius: 50%;
+    }
+    /* 不能忘了权重问题 */
+    .promo-nav .selected {
+        background-color: #ff5000;
+    }
 </style>
 <body>
     <div class="tb-promo">
-        <a href="#" class="prev"></a>
+        <a href="#" class="prev">&lt;</a>
+        <a href="#" class="next">&gt;</a>
+        <ul class="promo-nav">
+            <li class="selected"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
     </div>
 </body>
 </html>
