@@ -57,7 +57,9 @@ a {
     border-bottom: 2px solid #0097fb;
     color: #0097fb;
 }
-
+.user img {
+    vertical-align: middle;
+}
 .search {
     float: left;
     width: 412px;
