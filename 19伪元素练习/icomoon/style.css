@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?pic98j');
+  src:  url('fonts/icomoon.eot?pic98j#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?pic98j') format('truetype'),
+    url('fonts/icomoon.woff?pic98j') format('woff'),
+    url('fonts/icomoon.svg?pic98j#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-box:before {
+  content: "\e906";
+  color: #0061d5;
+}
+.icon-instacart:before {
+  content: "\e900";
+  color: #43b02a;
+}
+.icon-intel:before {
+  content: "\e901";
+  color: #0071c5;
+}
+.icon-letterboxd:before {
+  content: "\e902";
+  color: #00d735;
+}
+.icon-microsoftedge:before {
+  content: "\e903";
+  color: #0078d7;
+}
+.icon-mozillafirefox:before {
+  content: "\e904";
+  color: #ff7139;
+}
+.icon-twitter:before {
+  content: "\e905";
+  color: #1da1f2;
+}
+.icon-cheveron-down:before {
+  content: "\e908";
+}
+.icon-cheveron-left:before {
+  content: "\e909";
+}
+.icon-cheveron-right:before {
+  content: "\e90a";
+}
+.icon-cheveron-up:before {
+  content: "\e90b";
+}
+.icon-home:before {
+  content: "\e907";
+}
+.icon-cross:before {
+  content: "\ea0f";
+}
+.icon-checkmark:before {
+  content: "\ea10";
+}
