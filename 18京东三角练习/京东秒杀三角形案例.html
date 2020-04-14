@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .price {
+        width: 160px;
+        height: 24px;
+        margin: 100px auto;
+        line-height: 24px;
+        border: 1px solid red;
+        text-align: center;
+    }
+    .miaosha {
+        position: relative;
+        float: left;
+        width: 90px;
+        height: 100%;
+        background-color: red;
+        color: #ffffff;
+        font-weight: 700;
+        margin-right: 5px;
+    }
+    .miaosha .triangle {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-color: transparent #ffffff transparent transparent;
+        border-width: 24px 10px 0 0;
+        border-style: solid;
+    }
+    .origin {
+        font-size: 12px;
+        color: grey;
+        text-decoration: line-through;
+    }
+    /* 选择ul里面的第二个孩子 */
+    ul li:nth-child(2) {
+        background-color: skyblue;
+    }
+    section div:nth-child(1) {
+        background-color: red;
+    }
+    select div:nth-of-type(1) {
+        background-color: blue;
+    }
+</style>
+<body>
+    <section>
+        <p>光头强</p>
+        <div>熊大</div>
+        <div>熊二</div>
+    </section>
+    <div class="price">
+        <span class="miaosha">￥6500
+            <!-- span里面决不能放div标签 -->
+            <i class="triangle"></i>
+        </span>
+        <span class="origin">￥1500</span>
+    </div>
+</body>
+</html>

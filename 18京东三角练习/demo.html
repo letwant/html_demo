@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box1 {
+        width: 0;
+        height: 0;
+        border-top: 50px solid pink;
+        border-right: 50px solid skyblue;
+        border-bottom: 50px solid blue;
+        border-left: 50px solid green;
+    }
+    .box2 {
+        width: 0;
+        height: 0;
+        border-top: 80px solid pink;
+        border-right: 50px solid skyblue;
+        border-left: 50px solid green;
+    }
+    .box3 {
+        width: 0;
+        height: 0;
+        border-top: 80px solid transparent;
+        border-right: 50px solid skyblue;
+        border-left: 50px solid transparent;
+    }
+    .box4 {
+        width: 0;
+        height: 0;
+        /* 把上边框宽度调大 */
+        border-top: 80px solid transparent;
+        border-right: 50px solid skyblue;
+        /* 左边和下边的边框宽度设置为0 */
+        border-left: 0 solid transparent;
+    }
+    .box5 {
+        float: left;
+        /* 1.只保留右边的边框有颜色 */
+        border-color: transparent red transparent transparent;
+        /* 2.样式都是solid */
+        border-style: solid;
+        /* 3.上边框宽度要大，右边框宽度稍小，其余的边框均为0 */
+        border-width: 100px 50px 0 0;
+    }
+</style>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+</body>
+</html>
