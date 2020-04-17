@@ -199,3 +199,14 @@
     background-color: #f5f5f5;
     padding-top: 30px;
 }
+.mod_service {
+    height: 80px;
+    border-bottom: 1px solid #cccccc;
+}
+.mod_service ul li {
+    float: left;
+    width: 240px;
+    height: 50px;
+    padding-left: 35px;
+    background-color: pink;
+}
