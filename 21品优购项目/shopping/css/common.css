@@ -1,0 +1,133 @@
+/* 版心 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.style_red {
+    color: #c81623;
+}
+/* 声明字体 */
+@font-face {
+    font-family: 'icomoon';
+    /* 这里注意使用相对路径 */
+    src: url('../fonts/icomoon.eot?z5bpia');
+    src: url('../fonts/icomoon.eot?z5bpia#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?z5bpia') format('truetype'),
+        url('../fonts/icomoon.woff?z5bpia') format('woff'),
+        url('../fonts/icomoon.svg?z5bpia#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* 快捷导航模块 */
+.shortcut {
+    height: 31px;
+    line-height: 31px;
+    background-color: #f1f1f1;
+}
+.shortcut ul li {
+    float: left;
+}
+
+.shortcut .fr ul li:nth-child(even) {
+    height: 12px;
+    width: 1px;
+    margin: 10px 15px 0;
+    background-color: #666666;
+}
+.arrow-icon::after {
+    margin-left: 5px;
+    font-family: 'icomoon';
+    content: "\e908";
+}
+
+/* header头部制作 */
+.header {
+    position: relative;
+    height: 105px;
+}
+.logo {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 171px;
+    height: 61px;
+}
+.logo a {
+    display: block;
+    width: 171px;
+    height: 61px;
+    background: url(../images/logo.png) no-repeat;
+    font-size: 0;
+}
+.search {
+    position: absolute;
+    top: 25px;
+    left: 346px;
+    width: 538px;
+    height: 36px;
+    border: 2px solid #b1191a;
+}
+.search input {
+    float: left;
+    height: 32px;
+    width: 454px;
+    padding-left: 10px;
+}
+.search button {
+    float: left;
+    height: 32px;
+    width: 80px;
+    background-color: #b1191a;
+    font-size: 16px;
+    color: #ffffff;
+}
+.hotwords {
+    position: absolute;
+    top: 66px;
+    left: 346px;
+}
+.hotwords a{
+    margin: 0 10px;
+}
+.shopcar {
+    position: absolute;
+    top: 25px;
+    right: 60px;
+    width: 140px;
+    height: 35px;
+    background-color: #f7f7f7;
+    border: 1px solid #dfdfdf;
+    line-height: 35px;
+    text-align: center;
+}
+.shopcar::before {
+    font-family: 'icomoon';
+    content: "\e90c";
+    margin-left: 5px;
+    color: #b1191a;
+}
+.shopcar::after {
+    font-family: 'icomoon';
+    content: "\e90a";
+    margin-right: 10px;
+}
+.count {
+    position: absolute;
+    top: -5px;
+    /* 改成左对齐，如果数字很大方便观看 */
+    right: 10px;
+    height: 14px;
+    padding: 0 5px;
+    line-height: 14px;
+    color: #ffffff;
+    border-radius: 7px 7px 7px 0;
+    background-color: #e60012;
+}
