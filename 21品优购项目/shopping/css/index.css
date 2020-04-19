@@ -39,7 +39,25 @@
     line-height: 24px;
 }
 .lifeservice {
+    overflow: hidden;
     height: 209px;
     margin-bottom: 5px;
-    background-color: skyblue;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+}
+.lifeservice ul {
+    width: 254px;
+}
+.lifeservice ul li {
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+.lifeservice ul li i {
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    background-color: slateblue;
 }
