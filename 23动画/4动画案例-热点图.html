@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .map {
+            position: relative;
+            width: 747px;
+            height: 616px;
+            background: url("中国地图.jpg") no-repeat;
+            margin: 0 auto;
+        }
+
+        .city {
+            position: absolute;
+            top: 242px;
+            right: 240px;
+        }
+        /* 使用继承的方法来完成波纹图的复制 */
+        .shanghai {
+            top: 369px;
+            right: 195px;
+        }
+
+        .dotted {
+            width: 8px;
+            height: 8px;
+            background-color: #0099ff;
+            border-radius: 50%;
+        }
+
+        .city div[class^="pulse"] {
+            /* 保证小波纹在父盒子水平垂直居中 放大之后就会中心向四周发散 */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 8px;
+            height: 8px;
+            box-shadow: 0 0 12px #009dfd;
+            border-radius: 50%;
+            animation: pulse 1.2s linear infinite;
+        }
+
+        /* 如果单纯只写.pulse2，那么这个权重是10，上面权重是21，无法显示效果 */
+        .city div.pulse2 {
+            animation-delay: 0.4s;
+        }
+
+        .city div.pulse3 {
+            animation-delay: 0.8s;
+        }
+
+        /* 这里动画使用改变宽度而不是使用scale来放大波纹，是因为scale会让阴影同步变大，不好看 */
+        @keyframes pulse {
+            0% {}
+
+            70% {
+                width: 40px;
+                height: 40px;
+                opacity: 1;
+            }
+
+            100% {
+                width: 70px;
+                height: 70px;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="map">
+        <div class="city">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+        <div class="city shanghai">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+    </div>
+</body>
+
+</html>
