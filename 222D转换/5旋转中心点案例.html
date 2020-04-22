@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        overflow: hidden;
+        height: 200px;
+        width: 200px;
+        margin: 200px auto;
+        border: 1px solid #000000;
+    }
+    div::before {
+        content: "黑马";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: hotpink;
+        transform: rotate(90deg);
+        /* 设置中心点为左下角 */
+        transform-origin: bottom left;
+        transition: all 0.5s;
+    }
+    div:hover::before {
+        transform: rotate(0);
+    }
+</style>
+<body>
+    <div></div>
+</body>
+</html>
