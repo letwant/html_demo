@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @keyframes move1 {
+        0% {
+            transform: translate(0, 0);
+        }
+        100% {
+            transform: translate(0, 0);
+            width: 100px;
+        }
+    }
+    div {
+        width: 20px;
+        height: 20px;
+        background-color: pink;
+    }
+    .div1 {
+        /* 默认是ease，即速度慢慢变快，快结束时速度又变慢 */
+        animation: move1 2s ease forwards;
+    }
+    .div2 {
+        margin-top: 50px;
+        /* 分5步增长，不是连续的 */
+        animation: move1 2s steps(5) forwards;
+    }
+    .div3 {
+        margin-top: 50px;
+        /* 匀速直线运动 */
+        animation: move1 2s linear forwards;
+    }
+</style>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</body>
+</html>
