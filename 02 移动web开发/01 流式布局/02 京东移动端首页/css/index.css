@@ -1,0 +1,78 @@
+body {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 640px;
+    background: #fff;
+    font-size: 14px;
+    font-family: -apple-system, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #666;
+    background-color: blanchedalmond;
+    }
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    line-height: 45px;
+}
+
+.app {
+    height: 45px;
+}
+.app ul li {
+    float: left;
+    height: 45px;
+    background-color: #333333;
+    color: #fff;
+}
+.app ul li:nth-child(1) {
+    width: 8%;
+}
+.app ul li:nth-child(1) img {
+    width: 10px;
+}
+.app ul li:nth-child(2) {
+    width: 10%;
+}
+.app ul li:nth-child(2) img {
+    width: 30px;
+    vertical-align: middle;
+}
+.app ul li:nth-child(3) {
+    width: 57%;
+}
+.app ul li:nth-child(4) {
+    width: 25%;
+    background-color: #f63515;
+}
+
+/* 搜索模块 */
+.search-wrap {
+    overflow: hidden;
+    position: relative;
+    height: 44px;
+}
+.msCancelBtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 44px;
+    background-color: blue;
+}
+.searchInput {
+    height: 30px;
+    margin: 0 50px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-top: 7px;
+}
+.msShortcutLogin {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 44px;
+    background-color: pink;
+}
