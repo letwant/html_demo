@@ -7,8 +7,14 @@ body {
     font-family: -apple-system, Helvetica, sans-serif;
     line-height: 1.5;
     color: #666;
-    background-color: blanchedalmond;
-    }
+    height: 2000px;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -17,37 +23,49 @@ ul {
     line-height: 45px;
 }
 
+img {
+    vertical-align: middle;
+}
+
 .app {
     height: 45px;
 }
+
 .app ul li {
     float: left;
     height: 45px;
     background-color: #333333;
     color: #fff;
 }
+
 .app ul li:nth-child(1) {
     width: 8%;
 }
+
 .app ul li:nth-child(1) img {
     width: 10px;
 }
+
 .app ul li:nth-child(2) {
     width: 10%;
 }
+
 .app ul li:nth-child(2) img {
     width: 30px;
     vertical-align: middle;
 }
+
 .app ul li:nth-child(3) {
     width: 57%;
 }
+
 .app ul li:nth-child(4) {
     width: 25%;
     background-color: #f63515;
 }
 
 /* 搜索模块 */
+
 .search-wrap {
     overflow: hidden;
     position: fixed;
@@ -56,6 +74,7 @@ ul {
     min-width: 320px;
     max-width: 640px;
 }
+
 .msCancelBtn {
     position: absolute;
     top: 0;
@@ -63,6 +82,7 @@ ul {
     width: 40px;
     height: 44px;
 }
+
 .msCancelBtn::before {
     display: block;
     margin: 14px 0 0 15px;
@@ -72,6 +92,7 @@ ul {
     background-size: 20px 18px;
     content: "";
 }
+
 .msShortcutLogin {
     position: absolute;
     top: 0;
@@ -81,6 +102,7 @@ ul {
     color: #fff;
     line-height: 44px;
 }
+
 .searchInput {
     position: relative;
     height: 30px;
@@ -89,6 +111,7 @@ ul {
     border-radius: 15px;
     margin-top: 7px;
 }
+
 .jd-icon {
     position: absolute;
     top: 8px;
@@ -109,6 +132,7 @@ ul {
     height: 15px;
     background-color: #cccccc;
 }
+
 .fangdajing {
     position: absolute;
     top: 8px;
@@ -118,6 +142,62 @@ ul {
     background: url(../images/精灵图.png) no-repeat -81px 0;
     background-size: 200px auto;
 }
-.slider img{
+
+.slider img {
     width: 100%;
+}
+
+/* 品牌日 */
+
+.brand {
+    /* 切的是盒子而不是图片，所以要加上overflow: hidden; */
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.brand div {
+    float: left;
+    width: 33.33%;
+}
+
+.brand div img {
+    width: 100%;
+}
+nav {
+    padding-top: 5px;
+}
+nav a {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+nav a img {
+    width: 40px;
+    margin: 10px 0;
+}
+
+nav a span {
+    display: block;
+}
+
+/* news */
+.news {
+    margin-top: 20px;
+}
+
+.news img {
+    width: 100%;
+}
+.news a {
+    float: left;
+    box-sizing: border-box;
+}
+.news a:nth-child(1) {
+    width: 50%;
+}
+.news a:nth-child(2),
+.news a:nth-child(3) {
+    width: 25%;
+    border-left: 1px solid #ccc;
 }
