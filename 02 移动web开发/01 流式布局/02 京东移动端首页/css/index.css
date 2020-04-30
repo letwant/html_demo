@@ -50,8 +50,11 @@ ul {
 /* 搜索模块 */
 .search-wrap {
     overflow: hidden;
-    position: relative;
+    position: fixed;
+    width: 100%;
     height: 44px;
+    min-width: 320px;
+    max-width: 640px;
 }
 .msCancelBtn {
     position: absolute;
@@ -59,14 +62,15 @@ ul {
     left: 0;
     width: 40px;
     height: 44px;
-    background-color: blue;
 }
-.searchInput {
-    height: 30px;
-    margin: 0 50px;
-    background-color: #fff;
-    border-radius: 15px;
-    margin-top: 7px;
+.msCancelBtn::before {
+    display: block;
+    margin: 14px 0 0 15px;
+    width: 18px;
+    height: 20px;
+    background: url(../images/search-btn.png);
+    background-size: 20px 18px;
+    content: "";
 }
 .msShortcutLogin {
     position: absolute;
@@ -74,5 +78,46 @@ ul {
     right: 0;
     width: 40px;
     height: 44px;
-    background-color: pink;
+    color: #fff;
+    line-height: 44px;
+}
+.searchInput {
+    position: relative;
+    height: 30px;
+    margin: 0 50px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-top: 7px;
+}
+.jd-icon {
+    position: absolute;
+    top: 8px;
+    left: 13px;
+    height: 15px;
+    width: 20px;
+    background: url("../images/logo.png") no-repeat;
+    background-size: 20px 15px;
+}
+
+.jd-icon::after {
+    position: absolute;
+    top: 0;
+    right: -8px;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: #cccccc;
+}
+.fangdajing {
+    position: absolute;
+    top: 8px;
+    left: 50px;
+    width: 18px;
+    height: 15px;
+    background: url(../images/精灵图.png) no-repeat -81px 0;
+    background-size: 200px auto;
+}
+.slider img{
+    width: 100%;
 }
