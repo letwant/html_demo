@@ -8,9 +8,14 @@ body {
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
 }
-
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 a {
     text-decoration: none;
+    color: #222222;
 }
 
 div {
@@ -74,4 +79,46 @@ div {
     background: url(../images/sprite.png) no-repeat -59px -194px;
     background-size: 104px auto;
     margin: 4px auto -2px;
+}
+
+/* focus */
+.focus {
+    padding-top: 44px;
+}
+.focus img {
+    width: 100%;
+}
+
+/* 局部导航栏 */
+.local-nav {
+    display: flex;
+    height: 64px;
+    margin: 3px 4px;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.local-nav li {
+    flex: 1;
+}
+
+.local-nav a {
+    display: flex;
+    flex-direction: column;
+    /* 侧轴居中对齐 */
+    align-items: center;
+    font-size: 12px;
+}
+.local-nav li a .local-nav-icon {
+    width: 32px;
+    height: 32px;
+    margin-top: 8px;
+    background-size: 32px auto;
+}
+
+.local-nav .local-nav-icon {
+    background: url(../images/localnav_bg.png) 0 0 no-repeat;
+}
+.local-nav .local-nav-icon:nth-child(2) {
+    background: url(../images/localnav_bg.png) 0 -32px no-repeat;
 }
