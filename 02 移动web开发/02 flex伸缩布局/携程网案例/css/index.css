@@ -109,16 +109,228 @@ div {
     align-items: center;
     font-size: 12px;
 }
-.local-nav li a .local-nav-icon {
+.local-nav .local-nav-icon {
     width: 32px;
     height: 32px;
     margin-top: 8px;
+}
+
+.local-nav li:nth-child(1) .local-nav-icon{
+    background: url(../images/localnav_bg.png) 0 0 no-repeat;
+    background-size: 32px auto;
+}
+.local-nav li:nth-child(2) .local-nav-icon {
+    background: url(../images/localnav_bg.png) 0 -32px no-repeat;
+    background-size: 32px auto;
+}
+.local-nav li:nth-child(3) .local-nav-icon {
+    background: url(../images/localnav_bg.png) 0 -64px no-repeat;
+    background-size: 32px auto;
+}
+.local-nav li:nth-child(4) .local-nav-icon {
+    background: url(../images/localnav_bg.png) 0 -96px no-repeat;
+    background-size: 32px auto;
+}
+.local-nav li:nth-child(5) .local-nav-icon {
+    background: url(../images/localnav_bg.png) 0 -128px no-repeat;
     background-size: 32px auto;
 }
 
-.local-nav .local-nav-icon {
-    background: url(../images/localnav_bg.png) 0 0 no-repeat;
+/* nav */
+nav {
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 0 4px 3px;
 }
-.local-nav .local-nav-icon:nth-child(2) {
-    background: url(../images/localnav_bg.png) 0 -32px no-repeat;
+
+.nav-common {
+    display: flex;
+    height: 88px;
+}
+.nav-common:nth-child(2) {
+    margin: 3px 0;
+}
+
+.nav-items {
+    flex: 1;
+    /* 与上面的flex布局不冲突的 */
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-items a {
+    flex: 1;
+    line-height: 44px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    text-shadow: 1px 1px rgba(0, 0, 0, .2);
+}
+
+.nav-items a:nth-child(1) {
+    border-bottom: 1px solid #ffffff;
+}
+
+.nav-common:nth-child(1) .nav-items:nth-child(1) a {
+    border: 0;
+    background: url(../images/hotel.png) no-repeat bottom center;
+    background-size: 121px auto;
+}
+.nav-common:nth-child(2) .nav-items:nth-child(1) a {
+    border: 0;
+    background: url(../images/flight.png) no-repeat bottom center;
+    background-size: 121px auto;
+}
+.nav-common:nth-child(3) .nav-items:nth-child(1) a {
+    border: 0;
+    background: url(../images/travel.png) no-repeat bottom center;
+    background-size: 121px auto;
+}
+/* -n+2就是前面两个 */
+.nav-items:nth-child(-n+2) {
+    border-right: 1px solid #ffffff;
+}
+
+.nav-common:nth-child(1) {
+    background: -webkit-linear-gradient(left, #fa5a55, #fa994d);
+}
+.nav-common:nth-child(2) {
+    background: -webkit-linear-gradient(left, #4b90ed, #53bced);
+}
+.nav-common:nth-child(3) {
+    background: -webkit-linear-gradient(left, #34c2a9, #6cd559);
+}
+
+/* 侧导航栏 */
+.subnav-entry {
+    display: flex;
+    padding: 5px 0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    margin: 0 4px;
+    flex-wrap: wrap;
+}
+
+.subnav-entry li {
+    /* 里面的子盒子可以写百分比 相对于父级盒子来说*/
+    flex: 20%;
+}
+
+.subnav-entry a {
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+}
+
+.subnav-entry-icon {
+    width: 28px;
+    height: 28px;
+    margin-top: 4px;
+}
+.subnav-entry li:nth-child(1) .subnav-entry-icon {
+    background: url(../images/subnav-bg.png) no-repeat 0 0;
+    background-size: 28px auto;
+}
+.subnav-entry li:nth-child(2) .subnav-entry-icon {
+    background: url(../images/subnav-bg.png) no-repeat 0 -28px;
+    background-size: 28px auto;
+}
+.subnav-entry li:nth-child(3) .subnav-entry-icon {
+    background: url(../images/subnav-bg.png) no-repeat 0 -62px;
+    background-size: 28px auto;
+}
+.subnav-entry li:nth-child(4) .subnav-entry-icon {
+    background: url(../images/subnav-bg.png) no-repeat 0 -96px;
+    background-size: 28px auto;
+}
+.subnav-entry li:nth-child(5) .subnav-entry-icon {
+    background: url(../images/subnav-bg.png) no-repeat 0 -129px;
+    background-size: 28px auto;
+}
+.subnav-entry li:nth-child(6) .subnav-entry-icon {
+    background: url(../images/subnav-bg.png) no-repeat 5px -161px;
+    background-size: 28px auto;
+}
+.subnav-entry li:nth-child(7) .subnav-entry-icon {
+    background: url(../images/subnav-bg.png) no-repeat 0 -196px;
+    background-size: 28px auto;
+}
+.subnav-entry li:nth-child(8) .subnav-entry-icon {
+    background: url(../images/subnav-bg.png) no-repeat 0 -228px;
+    background-size: 28px auto;
+}
+.subnav-entry li:nth-child(9) .subnav-entry-icon {
+    background: url(../images/subnav-bg.png) no-repeat 0 -257px;
+    background-size: 28px auto;
+}
+.subnav-entry li:nth-child(10) .subnav-entry-icon {
+    background: url(../images/subnav-bg.png) no-repeat 4px -285px;
+    background-size: 28px auto;
+}
+
+/* 销售模块 */
+.sales-box {
+    border-top: 1px solid #cccccc;
+    background-color: #ffffff;
+    margin: 4px;
+}
+
+.sales-hd {
+    position: relative;
+    height: 44px;
+    border-bottom: 1px solid #ccc;
+}
+
+.sales-hd h2 {
+    position: relative;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+.sales-hd h2::after {
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    content: "";
+    width: 79px;
+    height: 15px;
+    background: url(../images/hot.png) no-repeat 0 -20px;
+    background-size: 79px auto;
+}
+
+.more {
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    background: -webkit-linear-gradient(left, #ff506c, #ff6bc6);
+    border-radius: 15px;
+    padding: 3px 20px 3px 10px;
+    color: #ffffff;
+}
+.more::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    transform: rotate(45deg);
+}
+
+.row {
+    display: flex;
+}
+
+.row a {
+    flex: 1;
+    border-bottom: 1px solid #eee;
+}
+.row a:nth-child(1) {
+    border-right: 1px solid #eee;
+}
+
+.row a img {
+    width: 100%;
 }
