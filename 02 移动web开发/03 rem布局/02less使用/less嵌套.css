@@ -12,6 +12,6 @@
 .nav .logo {
   color: green;
 }
-.nav:::before {
+.nav::before {
   content: "";
 }
